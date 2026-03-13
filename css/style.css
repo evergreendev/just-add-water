@@ -291,19 +291,20 @@ body{
 
 .split-container__col--river{
   background-image: url(../img/annual-report.webp);
-  padding-right: 64px;
+  padding-left: 64px;
 }
 
-.split-container__col--left-edge{
+.split-container__col--right-edge{
   display: flex;
-  margin-left: -12vh;
+  margin-right: -12vh;
+  z-index: 50;
 }
-.split-container__col--left-edge .split-container__edge{
-  background-image: url(../img/left-edge.png);
+.split-container__col--right-edge .split-container__edge{
+  background-image: url(../img/right-edge.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
-  width: 10vh;
+  width: 20vh;
 }
 
 .split-container__content{
@@ -315,7 +316,7 @@ body{
   flex:1;
 }
 
-.split-container__content--left-edge{
+.split-container__content--right-edge{
   background-color: #198acb;
   flex:1;
 }
