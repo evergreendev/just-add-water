@@ -410,6 +410,14 @@ body{
   position: relative;
 }
 
+.eyebrow{
+  margin-top: 1rem;
+}
+.section__content h2{
+  margin: 0 0 2rem;
+  font-size: 3rem;
+}
+
 .section__inner--bottom-edge{
   background: #0e5485;
 }
@@ -417,7 +425,7 @@ body{
 .grid-2{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
   place-items: center;
 }
 
@@ -449,4 +457,13 @@ body{
 .faq summary{
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+.section--basic{
+  background: #0e5485;
+  color: white;
+}
+
+.section a{
+  color: white;
 }
