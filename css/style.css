@@ -330,7 +330,7 @@ body{
   line-height: 1;
   margin: 2rem auto;
   opacity: 0;
-  animation: fadeInSlideUp 0.8s ease-out forwards;
+  animation: fadeInSlideUp 1.8s ease-out forwards;
   animation-delay: 0.5s;
 }
 
@@ -339,7 +339,7 @@ body{
   text-align: right;
   max-width: 5em;
   font-weight: bold;
-  animation-delay: 0.8s;
+  animation-delay: 2.6s;
   color: #074370;
 }
 
