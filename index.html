@@ -24,6 +24,9 @@
 
 <body>
 <div id="loading-screen" class="loading-screen"></div>
+<a href="https://wdrws.org" class="sticky-logo">
+  <img src="img/wdrws-white-logo.webp" alt="WDRWS Logo">
+</a>
 <header>
   <div class="split-container">
     <div class="split-container__col split-container__col--right-edge">
@@ -41,13 +44,14 @@
   </div>
 </header>
 
-<div class="article-time">
-  <div class="article-time__content content">This site is designed to answer any single question you have about West River’s
-    water security in 30 seconds.<br>
-    It’s also designed to make you an expert in the subject in about 5 minutes.
+<nav class="article-time">
+  <div class="article-time__content content">
+    <a href="#why">Why?</a>
+    <a href="#solution">Solution and Process</a>
+    <a href="#concerns">Concerns</a>
+    <a href="#help">Stay Informed</a>
   </div>
-
-</div>
+</nav>
 
 <main class="container">
   <section class="section section--bottom-edge" id="why">
@@ -72,8 +76,7 @@
 
           </div>
           <div class="graph-box" aria-label="Placeholder for South Dakota Mines graph">
-            SD Mines Graph Placeholder<br/>
-            Data visualization area for current water trends and drought risk.
+            <img src="img/WDRWS-graph.png" alt="Placeholder for South Dakota Mines graph" class="graph-image">
           </div>
         </div>
       </div>
@@ -81,66 +84,68 @@
 
   </section>
 
-  <section class="section section--following-bottom" id="concerns">
+  <section class="section section--following-bottom" id="solution">
     <div class="section__inner section__inner--following-bottom">
       <div class="section__content">
-        <div class="eyebrow">Section 2</div>
-        <h2>Your Concerns Addressed</h2>
+        <div class="eyebrow">Section 2</div> <h2>A Possible Solution and Process</h2>
         <div class="grid-2">
-          <div><img src="img/pactola.jpg" alt="" class="in-text-image"/></div>
-          <div>
-            <div class="faq">
-              <details open>
-                <summary>How much will this cost and who is going to pay for it?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fermentum lacus. Nunc gravida pretium
-                  augue, non egestas augue accumsan sed. Sed suscipit imperdiet lectus, vitae pretium mauris condimentum
-                  sed.</p>
-              </details>
-              <details>
-                <summary>Will this have a negative impact on the environment?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, mi sed consectetur interdum, erat elit
-                  pulvinar sem, ac ultrices massa augue ac velit. Cras laoreet, nisl nec viverra volutpat, arcu nibh cursus
-                  turpis, vel luctus enim neque quis nisi.</p>
-              </details>
-              <details>
-                <summary>What is WDRWS?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel malesuada mi. Donec suscipit, libero non
-                  faucibus cursus, neque turpis tristique leo, at luctus risus purus id orci. Integer sed semper mauris.</p>
-              </details>
-              <details>
-                <summary>Still have a question we haven’t answered?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisl a augue mollis feugiat. Add a contact
-                  form or dedicated email module here so visitors can submit questions directly.</p>
-              </details>
-            </div></div>
+          <article class="card">
+            <h3>Feasibility Study</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non faucibus neque. In tempor metus vitae feugiat
+              consequat. Pellentesque eu mi quis metus tristique consequat. Quisque commodo eleifend tellus, vitae finibus
+              est feugiat ut.
+            </p>
+          </article>
+          <article class="card">
+            <h3>History</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum, nibh quis pulvinar posuere, tortor
+              odio mattis nibh, ac accumsan felis turpis sed nisl. Aliquam at nibh quis nulla pellentesque porta.
+            </p>
+          </article>
         </div>
-
-
       </div>
     </div>
 
   </section>
 
-  <section class="section" id="solution">
+  <section class="section" id="concerns">
 
-    <div class="section__content">   <div class="eyebrow">Section 3</div> <h2>A Possible Solution and Process</h2>
+    <div class="section__content">
+      <div class="eyebrow">Section 3</div>
+      <h2>Your Concerns Addressed</h2>
       <div class="grid-2">
-        <article class="card">
-          <h3>Feasibility Study</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non faucibus neque. In tempor metus vitae feugiat
-            consequat. Pellentesque eu mi quis metus tristique consequat. Quisque commodo eleifend tellus, vitae finibus
-            est feugiat ut.
-          </p>
-        </article>
-        <article class="card">
-          <h3>History</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum, nibh quis pulvinar posuere, tortor
-            odio mattis nibh, ac accumsan felis turpis sed nisl. Aliquam at nibh quis nulla pellentesque porta.
-          </p>
-        </article>
-      </div></div>
+        <div><img src="img/pactola.jpg" alt="" class="in-text-image"/></div>
+        <div>
+          <div class="faq">
+            <details open>
+              <summary>How much will this cost and who is going to pay for it?</summary>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fermentum lacus. Nunc gravida pretium
+                augue, non egestas augue accumsan sed. Sed suscipit imperdiet lectus, vitae pretium mauris condimentum
+                sed.</p>
+            </details>
+            <details>
+              <summary>Will this have a negative impact on the environment?</summary>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend, mi sed consectetur interdum, erat elit
+                pulvinar sem, ac ultrices massa augue ac velit. Cras laoreet, nisl nec viverra volutpat, arcu nibh cursus
+                turpis, vel luctus enim neque quis nisi.</p>
+            </details>
+            <details>
+              <summary>What is WDRWS?</summary>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel malesuada mi. Donec suscipit, libero non
+                faucibus cursus, neque turpis tristique leo, at luctus risus purus id orci. Integer sed semper mauris.</p>
+            </details>
+            <details>
+              <summary>Still have a question we haven’t answered?</summary>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nisl a augue mollis feugiat. Add a contact
+                form or dedicated email module here so visitors can submit questions directly.</p>
+            </details>
+          </div></div>
+      </div>
+
+
+    </div>
 
   </section>
 

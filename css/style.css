@@ -163,8 +163,9 @@ textarea {
 .clearfix::after {
   clear: both;
 }
-body{
+body {
   margin: 0;
+  background-color: #c2d9ea;
 }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -403,6 +404,32 @@ body{
 .article-time__content{
   font-size: 1.2rem;
   font-weight: lighter;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article-time__content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.article-time__content a:hover {
+  text-decoration: underline;
+}
+
+.sticky-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 180px;
+}
+
+.sticky-logo img {
+  width: 100%;
+  height: auto;
 }
 
 .content{
@@ -457,7 +484,6 @@ body{
 .graph-box{
   border: 2px dashed white;
   border-radius: 12px;
-  padding: 3rem;
   background-color: #074370;
   display: flex;
   justify-content: center;
@@ -563,4 +589,10 @@ body{
   outline: none;
   border-color: #198acb;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.graph-image{
+  width: 100%;
+  max-width: 850px;
+  border-radius: 12px;
 }
