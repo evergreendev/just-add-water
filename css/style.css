@@ -467,3 +467,75 @@ body{
 .section a{
   color: white;
 }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #198acb;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #198acb !important;
+  border-color: #198acb;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 24px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-form label {
+  font-weight: 600;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: #198acb;
+  background-color: rgba(255, 255, 255, 0.1);
+}
