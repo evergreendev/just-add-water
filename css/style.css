@@ -256,15 +256,17 @@ body {
 .split-container{
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
-  min-height: 950px;
+  flex-direction: column;
+  position: relative;
+/*  height: 80vh;
+  min-height: 950px;*/
 }
 .split-container__col{
   width: 100%;
 }
 @media (min-width: 768px) {
   .split-container__col{
-    width: 50%;
+    width: 100%;
   }
 }
 .split-container *{
@@ -278,7 +280,6 @@ body {
 }
 
 .split-container__overlay{
-  background-color: #198acb;
   height: 100%;
   left: 0;
   position: absolute;
@@ -294,8 +295,8 @@ body {
 }
 
 .split-container__col--river .split-container__content{
-  background-color: #198acb;
-  padding-left: 64px;
+  background-color: rgba(94, 116, 57, 0.71);
+  padding-right: 105px;
 }
 
 .split-container__col--right-edge{
@@ -304,7 +305,7 @@ body {
   z-index: 50;
 }
 .split-container__col--river .split-container__edge{
-  background-image: url(../img/right-edge.png);
+  /*background-image: url(../img/right-edge.png);*/
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -317,8 +318,12 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   flex:1;
+  padding: 1rem;
+}
+.split-container__col--river .split-container__content{
+  justify-content: start;
 }
 
 .split-container__content--right-edge{
@@ -357,11 +362,11 @@ body {
 .title{
   font-family: "Inter", sans-serif;
   color: #fff;
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 5.5rem;
+  font-weight: bold;
   max-width: 8em;
-  line-height: 1;
-  margin: 2rem auto;
+  line-height: .9;
+  margin: 0 auto;
   opacity: 0;
 }
 
@@ -371,11 +376,12 @@ body {
 }
 
 .title--right{
-  font-size: 8rem;
-  text-align: right;
+  font-size: 7.8rem;
+  text-align: left;
   max-width: 5em;
-  font-weight: bold;
-  color: #074370;
+  font-weight: bolder;
+  color: #ffcf30;
+  text-transform: uppercase;
 }
 
 .is-loaded .title--right {
@@ -512,7 +518,7 @@ body {
   background-color: white;
   color: #052e49 !important;
   padding: 10px 20px !important;
-  border-radius: 4px;
+  border-radius: 0;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -527,10 +533,10 @@ body {
 
 .sticky-logo {
   position: fixed;
-  top: 20px;
+  top: 0px;
   left: 20px;
   z-index: 1000;
-  width: 180px;
+  width: 280px;
 }
 
 .sticky-logo img {
@@ -559,8 +565,8 @@ body {
 
 .section--bottom-edge{
   color: white;
-  padding-bottom: calc(min(20vw, 250px));
-  background-image: url(../img/bottom-edge.png);
+  /*padding-bottom: calc(min(20vw, 250px));*/
+  /*background-image: url(../img/bottom-edge.png);*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -570,6 +576,7 @@ body {
 
 .eyebrow{
   margin-top: 1rem;
+  display: none;
 }
 .section__content h2{
   margin: 0 0 2rem;
@@ -589,7 +596,7 @@ body {
 
 .graph-box{
   border: 2px dashed white;
-  border-radius: 12px;
+  border-radius: 0;
   background-color: #074370;
   display: flex;
   justify-content: center;
@@ -600,20 +607,24 @@ body {
 .in-text-image{
   width: 100%;
   max-width: 650px;
-  border-radius: 52px;
+  border-radius: 0;
 }
 
 .section__inner--following-bottom{
-  background: #178acb;
+  background: #69843f;
   color: white;
   padding-top: calc(min(20vw, 250px));
   margin-top: calc(min(20vw, 250px) * -1);
   padding-bottom: 3rem;
 }
 
+.section__inner--following-bottom{
+
+}
+
 .faq details {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  border-radius: 0;
   margin-bottom: 1rem;
   overflow: hidden;
   transition: height 0.4s ease-in-out, background 0.3s ease, border-color 0.3s ease;
@@ -696,7 +707,7 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 0;
   border: 2px solid transparent;
   transition: all 0.3s ease;
   font-family: inherit;
@@ -717,7 +728,7 @@ body {
 .card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  border-radius: 24px;
+  border-radius: 0;
   height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -743,7 +754,7 @@ body {
 .newsletter-form input[type="email"] {
   padding: 0.9rem 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
+  border-radius: 0;
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
   font-family: inherit;
@@ -764,5 +775,9 @@ body {
 .graph-image{
   width: 100%;
   max-width: 850px;
-  border-radius: 12px;
+  border-radius: 0;
+}
+
+.in-text-video{
+  width: 100%;
 }
